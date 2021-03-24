@@ -32,9 +32,8 @@ class AreaManager {
      * @throws AreaException
      */
     public function init(): void {
-        $this->addArea(new Area("Spawn", new Position(-7000, 0, -7000, $this->core->getServer()->getDefaultLevel()), new Position(1000, 256, 1000, $this->core->getServer()->getDefaultLevel()), false, false));
-        $this->addArea(new Area("Boss", new Position(286, 102, 215, $this->core->getServer()->getLevelByName("boss")), new Position(1000, 256, 1000, $this->core->getServer()->getLevelByName("boss")), true, false));
-        $this->addArea(new Area("Koth", new Position(286, 102, 215, $this->core->getServer()->getLevelByName("koth")), new Position(1000, 256, 1000, $this->core->getServer()->getLevelByName("koth")), true, false));
+        $this->addArea(new Area("Spawn", new Position(-1000, 0, -1000, $this->core->getServer()->getDefaultLevel()), new Position(1000, 256, 1000, $this->core->getServer()->getDefaultLevel()), false, false));
+        $this->addArea(new Area("Info", new Position(286, 102, 215, $this->core->getServer()->getLevelByName("pvp")), new Position(255, 75, 240, $this->core->getServer()->getLevelByName("pvp")), false, false));
     }
 
     /**
