@@ -56,19 +56,35 @@ class Urbis extends PluginBase
 {
     use ManagerLoader;
 
-    static $debug = true;
-
-    public static $STARTUP_WORLDS = ["FactionsWorld", "boss", "koth"];
-    public static $DIRECTORIES = ["factions", "players", "kits", "scoreboard", "cape"];
-    public static $SERVER_NAME = "§7UrbisPE Factions";
+    static $debug = true
+	       
+	    
+    private static $STARTUP_WORLDS = ["wild", "pvp", "bossarena"];
+    private static $DIRECTORIES = ["factions", "players", "kits"];
+    private static $SERVER_NAME = "§l§cMuilti§eCraft§r §7- §l§b Op Factions§r§7";
 
     const MESSAGES = [
-        "UrbisMC Factions",
+        "§l§6Multi§6Craft§r §7- §l§bSERVER RESET!§r§7",
+        "§l§6Multi§6Craft§r §7- §l§bSERVER RELEASED!§r§7",
+        "§l§6Multi§6Craft§r §7- §l§bSEASON I§r§7",
     ];
 
-    const BORDER        = 22000;
-    const EXTRA_SLOTS   = 70;
-    const WORLD         = "FactionsWorld";
+    const BORDER = 20000;
+
+    const WORLD = "260";
+
+    const EXTRA_SLOTS = 20;
+  //  public static $STARTUP_WORLDS = ["FactionsWorld", "boss", "koth"];
+   // public static $DIRECTORIES = ["factions", "players", "kits", "scoreboard", "cape"];
+   // public static $SERVER_NAME = "§7UrbisPE Factions";
+
+    //const MESSAGES = [
+      //  "UrbisMC Factions",
+    //];
+
+    //const BORDER        = 22000;
+    //const EXTRA_SLOTS   = 70;
+    //const WORLD         = "FactionsWorld";
 
     public static $instance;
     public static $nbtWriter;
